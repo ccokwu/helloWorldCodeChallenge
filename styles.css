@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "adam";
+  src: url("public/fonts/Adam.otf");
+}
+
+@font-face {
+	font-family: ‘theBoldFont’;
+	src: url("public/fonts/Adam.otf");
+}
+
+html {
+
+}
+
+body {
+  background-image: url("public/images/nyc.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.prizeTitle h1 {
+  margin-top: 7%;
+  margin-right: 3%;
+  font-size: 60px;
+  color: white;
+  float: right;
+  z-index: 1;
+  font-family: theBoldFont;
+}
+
+.sideView {
+  background-color: RGBA(255, 255, 255, 0.5);
+  margin-right: 50%;
+  padding-top: 1%;
+  padding-bottom: 25%;
+}
+
+.sideView h1 {
+  color: white;
+  margin-top: 35%;
+  text-align: center;
+  font-family: adam;
+  font-size: 70px;
+}
+
+.sideView p {
+  color: white;
+  margin-left: 18%;
+  margin-right: 26%;
+  text-align: center;
+  font-family: adam;
+  font-size: 19px;
+}
+
+.sideView h6 {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  font-family: adam;
+  margin-left: -8%;
+}
+
+form {
+  margin-top: -46%;
+  margin-right: 3%;
+  float: right;
+  clear: left;
+}
+
+input {
+  /*display: block;*/
+  width: 250px;
+  height: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+}
+
+#address1, #address2 {
+  width: 530px;
+}
+
+#city, #state, #zip {
+  width: 158px;
+}
+
+#dontshow {
+  display: none;
+  /*something about this first field causes the form to submit anyway, so it's display must be hidden in order for the whole form to work for now until I figure out another way around that.*/
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 15px 50px 15px 50px;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+}
+
+button:hover {
+  color: #7097a0;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+/* figure out why the background image isn't covering the bottom part in the media queries */
+
+@media (max-width: 1199px) {
+  body {
+    background-size: cover, cover;
+  }
+
+  .sideView {
+    margin-right: 54%;
+  }
+}
+
+@media (max-width: 1114px) {
+  body {
+    background-size: cover, cover;
+  }
+
+  .sideView {
+    margin-right: 60%;
+  }
+}
+
+@media (max-width: 987px) {
+  body {
+    background-size: cover, cover;
+  }
+
+  .sideView {
+    margin-right: 65%;
+  }
+}
+
+@media (max-width: 906px) {
+  body {
+    background-size: cover, cover;
+  }
+
+  .prizeTitle h1 {
+    font-size: 58px;
+  }
+
+  .sideView h1 {
+    font-size: 40px;
+  }
+
+  .sideView p {
+    margin-left: 10%;
+    margih-right: 11%;
+  }
+}
+
+@media (max-width: 894px) {
+  body {
+    background-size: cover, cover;
+  }
+  form {
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 879px) {
+  body {
+    background-size: cover, cover;
+  }
+  .prizeTitle h1 {
+    font-family: 50px;
+    maright-right: 7%;
+  }
+
+  form {
+    margin-right: 7%;
+  }
+
+  #firstName, #lastName {
+    width: 200px;
+  }
+
+  #address1, #address2 {
+    width: 429px;
+  }
+
+  #city, #state, #zip {
+    width: 124px;
+  }
+}
