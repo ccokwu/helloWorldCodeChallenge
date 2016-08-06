@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "adam";
+  src: url("../fonts/Adam.otf");
+}
+
+@font-face {
+	font-family: ‘theBoldFont’;
+	src: url("../fonts/Adam.otf");
+}
+
+html {
+
+}
+
+body {
+  background-image: url("../images/nyc.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.confirmPage {
+  background-color: RGBA(255, 255, 255, 0.5);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  pading-right: 3%;
+}
+
+.confirmPage h1 {
+  font-size: 60px;
+  font-family: adam;
+  color: white;
+  text-align: center;
+}
+
+.confirmPage h3 {
+  color: white;
+  font-size: 20px;
+  font-family: adam;
+  text-align: center;
+}
+
+.confirmPage p {
+  color: white;
+  font-family: adam;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 6%;
+}
+
+.confirmPage button {
+  background-color: white;
+  color: black;
+  padding: 15px 50px 15px 50px;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  margin-left: 37%;
+}
+
+.confirmPage button a:hover {
+  color: #7097a0;
+}
+
+.confirmPage button:active {
+  background-color: black;
+  color: white;
+}
+
+.confirmPage button a:active {
+  color: white;
+}
+
+.confirmPage a {
+  text-decoration: none;
+  color: black;
+}

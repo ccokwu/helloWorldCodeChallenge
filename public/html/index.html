@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+
+  <body>
+
+    <div class="prizeTitle">
+      <h1>Prize Registration</h1>
+    </div>
+
+    <div class="sideView">
+      <h1>Win A Free Trip!</h1>
+      <p>
+        Register now on the form to the right to receive a chance to win a free trip to New York City!
+      </p>
+      <h6>Must be 18 or over to apply.</h6>
+    </div>
+
+    <form id="form" action="receive.html" method="post">
+      <p>
+        <!-- <input type="text" class="dontshow" id="dontshow" name="name" value=""> -->
+      </p> <!-- something about this first field causes the form to submit anyway, so it's display must be hidden in order for the whole form to work for now until I figure out another way around that-->
+      <p><input type="textarea" class="field" id="firstName" placeholder="First name">
+      <input type="textarea" class="field" id="lastName" placeholder="Last name"></p>
+      <p><input type="textarea" class="field" id="address1" placeholder="Address"></p>
+      <p><input type="textarea" id="address2" placeholder="Address 2"></p>
+      <p><input type="textarea" class="field" id="city" placeholder="City">
+      <input type="textarea" class="field" id="state" placeholder="State" maxlength="2" minlength="2">
+      <!-- <select class="field" id="state">
+        <option>--</option>
+        <option>Please Select State</option>
+        <option>Connecticut</option>
+        <option>Florida</option>
+        <option>Michigan</option>
+        <option>Ohio</option>
+      </select> -->
+
+      <input type="textarea" class="field" id="zip" placeholder="Zip (5 or 9 Digits)" minlength="5" maxlength="9"></p>
+      <button type="button" id="button" value="submit" onclick="myFunction(event)">Submit</button>
+    </form>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="server.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="../javascript/jquery.js"></script>
+    <script type="text/javascript" src="../javascript/scripts.js"></script>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+  </body>
+
+</html>
