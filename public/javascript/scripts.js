@@ -1,16 +1,21 @@
 function myFunction(event) {
-  //
-  // var x = document.getElementById("firstName").value;
-  // y = document.getElementById("lastName").value;
-  // z = document.getElementById("address1").value;
-  // a = document.getElementById("city").value;
-  // b = document.getElementById("state").value;
-  // c = document.getElementById("zip").value;
-  //
-  // if (x || y || z || a || b || c == "") {
-  //   event.preventDefault();
-  //   alert("Please fill out required fields to complete the form.");
-  // }
+
+//   var x = document.getElementById("firstName").value;
+//   y = document.getElementById("lastName").value;
+//   z = document.getElementById("address1").value;
+//   a = document.getElementById("city").value;
+//   b = document.getElementById("state").value;
+//   c = document.getElementById("zip").value;
+//
+//   if (x || y || z || a || b || c == "") {
+//     event.preventDefault();
+//     alert("Please fill out required fields to complete the form.");
+//   } else {
+//     if (x || y || z || a || b || c != ""){
+//         document.getElementById("form").submit();
+//   }
+//
+// };
 
 
   var fields = document.getElementsByClassName("field");
