@@ -80,3 +80,56 @@ body {
   text-decoration: none;
   color: black;
 }
+
+
+
+
+/* figure out what's going on with the background image and why it's not covering the entire background as the width size gets smaller */
+
+@media (max-width: 1056px) {
+  .confirmPage h1 {
+    font-size: 50px;
+  }
+
+  .confirmPage button {
+    margin-left: 35%;
+  }
+}
+
+@media (max-width: 880px) {
+  .confirmPage h1 {
+    font-size: 40px;
+  }
+
+  .confirmPage button {
+    margin-left: 33%;
+  }
+}
+
+@media (max-width: 760px) {
+  .confirmPage {
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .confirmPage h1 {
+    font-size: 30px;
+  }
+
+  .confirmPage h3 {
+    font-size: 18px;
+  }
+
+  .confirmPage p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 530px) {
+  .confirmPage button {
+    margin-left: 26%;
+  }
+}

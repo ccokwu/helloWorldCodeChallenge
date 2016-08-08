@@ -1,52 +1,25 @@
-console.log("Hello world");
+var http = require('http');
+    fs = require('fs');
 
+    var express = require('express');
+    app = express();
+    app.get("/public", function(request, response){
+      response.send("hello world");
+    });
+    app.use("/public", express.static(__dirname + '/public'));
+    // app.listen(8000);
 
+fs.readFile("public/html/index.html", function (err, html) {
+    if (err) {
+        throw err;
+    }
+    http.createServer(function(request, response) {
+        response.writeHeader(200, {"Content-Type": "text/html"});
+        response.write(html);
+        response.end();
+    }).listen(8000);
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var http = require('http');
-//     fs = require('fs');
-//
-//     var express = require('express');
-//     app = express();
-//     app.use('/public', express.static(__dirname + '/public'));
-//     // app.listen(8000);
-//
-// fs.readFile("public/html/index.html", function (err, html) {
-//     if (err) {
-//         throw err;
-//     }
-//     http.createServer(function(request, response) {
-//         response.writeHeader(200, {"Content-Type": "text/html"});
-//         response.write(html);
-//         response.end();
-//     }).listen(8000);
-// });
-//
 //
 //
 //

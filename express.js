@@ -1,8 +1,8 @@
 var express = require("express");
 var app = express();
-app.use(express.static(__dirname + "/public"))
+app.use(express.static(__dirname + "/public"));
 
-app.get("/", function(request, respond){
+app.get("/", function(request, response){
   response.send("hello world");
 });
 
@@ -12,4 +12,4 @@ var server = app.listen(8000, function(){
   console.log('Example app listening at http://%s:%s', host, port);
 });
 
-module.exports.express;
+module.exports = app;

@@ -295,63 +295,16 @@ button:active {
 
 @media (max-width: 682px) {
   form {
-    margin-right: 12%;
+
   }
 
   input {
+    /*width: 500px;*/
     margin-bottom: 10px;
     display: block;
   }
 
   #firstName, #lastName, #address1, #address2, #city, #state, #zip {
     width: 500px;
-  }
-
-  button {
-    width: 524px;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 640px) {
-  form {
-    margin-right: 8%;
-  }
-}
-
-@media (max-width: 600px) {
-  form {
-    margin-right: 4%;
-  }
-}
-
-@media (max-width: 550px) {
-  #firstName, #lastName, #address1, #address2, #city, #state, #zip {
-    width: 350px;
-  }
-
-  button {
-    width: 370px;
-  }
-  form {
-    margin-right: 15%;
-  }
-}
-
-@media (max-width: 470px) {
-  form {
-    margin-right: 10%;
-  }
-}
-
-@media (max-width: 450px) {
-  form {
-    margin-right: 5%;
-  }
-}
-
-@media (max-width: 400px) {
-  form {
-    margin-right: 3%;
   }
 }
