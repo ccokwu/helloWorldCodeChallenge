@@ -2,7 +2,7 @@ function myFunction(event) {
 
   var fields = document.getElementsByClassName("field");
   for (var x = 0; x < fields.length; x++){
-  if (fields[x].value == ""){
+  if (fields[x].value === ""){
     event.preventDefault();
     alert("Please fill out required fields to complete the form.");
     break;
